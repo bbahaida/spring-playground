@@ -9,9 +9,11 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.ImportResource;
 
 @SpringBootApplication
 @ComponentScan(basePackages = {"com.bahaida.untracked", "com.bahaida.springplayground"})
+@ImportResource("classpath:untracked-config.xml")
 public class SpringPlaygroundApplication {
 
 	private static Logger logger = LoggerFactory.getLogger(SpringPlaygroundApplication.class);

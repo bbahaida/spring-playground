@@ -5,10 +5,10 @@ import com.bahaida.untracked.UntrackedServiceImpl;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-@Configuration
+//@Configuration
 public class UntrackedConfig {
 
-    @Bean
+    //@Bean
     public UntrackedService untrackedService(){
         return new UntrackedServiceImpl();
     }
