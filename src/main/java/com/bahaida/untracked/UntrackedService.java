@@ -1,5 +1,7 @@
 package com.bahaida.untracked;
 
 public interface UntrackedService {
-    String sayHello();
+    default String sayHello(){
+        return "Hello Spring";
+    }
 }
